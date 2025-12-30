@@ -1,0 +1,26 @@
+{
+  "name": "mp3-app",
+  "version": "1.0.0",
+  "description": "MP3 File Analysis App",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.x",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  },
+  "private": true,
+  "author": "Tonika Valderrama <tonika.valderrama@gmail.com>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">= 20"
+  }
+}
