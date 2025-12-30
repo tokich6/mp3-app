@@ -1,5 +1,6 @@
-import express, { Request, Response } from 'express';
-import fileUploadRoute from "./routes/upload";
+import express from 'express';
+import fileUploadRoute from './routes/upload';
+import { errorHandler } from './middleware';
 
 const app = express();
 
@@ -8,10 +9,7 @@ app.use(express.json()); // Enable JSON parsing in the request body
 //Routes
 app.use('/file-upload', fileUploadRoute);
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('MP3 file upload!');
-});
-
-// TODO: add Global error handler (should be after routes)
+// Global error handler
+app.use(errorHandler);
 
 export default app;

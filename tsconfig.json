@@ -9,7 +9,9 @@
     "outDir": "dist",
     "noImplicitAny": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true
   },
   "exclude": [
     "node_modules"
