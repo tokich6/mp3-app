@@ -1,5 +1,10 @@
+//#region global imports
 import { NextFunction, Request, Response } from 'express';
+//#endregion global imports
+
+//#region local imports
 import { ErrorResponse } from '../interfaces';
+//#endregion local imports
 
 /**
  * Global error handling middleware

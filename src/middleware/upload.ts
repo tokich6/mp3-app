@@ -1,8 +1,12 @@
+//#region global imports
 import path from 'path';
 import multer from 'multer';
 import { NextFunction, Request, Response } from 'express';
+//#endregion global imports
 
+//#region local imports
 import { UPLOAD_CONSTANTS } from '../constants';
+//#endregion local imports
 
 const storage = multer.diskStorage({
   destination: `${UPLOAD_CONSTANTS.TEMP_DIR}`,

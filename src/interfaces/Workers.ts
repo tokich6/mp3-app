@@ -1,14 +1,14 @@
-export interface WorkerMessage {
+export type WorkerMessage = {
   filePath: string;
   jobId: string;
-}
+};
 
-export interface WorkerResponse {
+export type WorkerResponse = {
   jobId: string;
   success: boolean;
   frameCount?: number;
   error?: string;
-}
+};
 
 export type JobQueue = {
   filePath: string;

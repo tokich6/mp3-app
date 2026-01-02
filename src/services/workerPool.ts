@@ -1,7 +1,11 @@
+//#region global imports
 import { Worker } from 'worker_threads';
 import path from 'path';
+//#endregion global imports
 
+//#region local imports
 import { JobQueue } from '../interfaces';
+//#endregion local imports
 
 const jobQueue: JobQueue = [];
 

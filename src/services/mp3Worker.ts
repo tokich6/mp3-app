@@ -1,8 +1,12 @@
+//#region global imports
 import { parentPort } from 'worker_threads';
 import fs from 'fs';
+//#endregion global imports
 
+//#region local imports
 import { countMP3Frames } from './mp3Parser';
 import { WorkerMessage, WorkerResponse } from '../interfaces';
+//#endregion local imports
 
 if (!parentPort) {
   throw new Error('This script must be run as a Worker thread');

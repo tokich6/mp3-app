@@ -1,6 +1,11 @@
+//#region global imports
 import express from 'express';
+//#endregion global imports
+
+//#region local imports
 import fileUploadRoute from './routes/upload';
 import { errorHandler } from './middleware';
+//#endregion local imports
 
 const app = express();
 
